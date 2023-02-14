@@ -1,31 +1,4 @@
 /* Arquivo responsivo mobile */
-header {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-  height: auto;
-}
-header .linksHeader {
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-header button {
-  margin-top: 1rem;
-}
-.home {
-  height: fit-content;
-}
-.home > img {
-  display: none;
-}
-
-.home .title {
-  font-size: 1rem;
-  margin: 0 1rem 3rem 0;
-}
 
 .services {
   width: 100vw;
