@@ -1,19 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 button {
-    all: unset;
-    background-color: #008037;
+  all: unset;
+  background-color: #008037;
 }
 
 a {
@@ -98,155 +98,152 @@ header button:hover {
     color: #ffffff;
 }
 .services {
-    padding: 90px;
-    height: 400px;
-    background: -webkit-linear-gradient(left, #338092, #1bcc97);
-    background: -moz-linear-gradient(left, #338092, #1bcc97);
-    background: -ms-linear-gradient(left, #338092, #1bcc97);
-    background: -o-linear-gradient(left, #338092, #1bcc97);
-    background: linear-gradient(to right, #338092, #1bcc97);
+  width: 100vw;
+  padding: 5.625rem;
+  height: 37.5rem;
+  margin-bottom: 3.125rem;
+  background: -webkit-linear-gradient(left, #338092, #1bcc97);
+  background: -moz-linear-gradient(left, #338092, #1bcc97);
+  background: -ms-linear-gradient(left, #338092, #1bcc97);
+  background: -o-linear-gradient(left, #338092, #1bcc97);
+  background: linear-gradient(to right, #338092, #1bcc97);
 }
 .services h1 {
-    font-size: 50px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 40px;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .services h1 span {
-    color: #303a36;
+  color: #303a36;
 }
 .services h2 {
-    width: 58.0625rem;
-    margin: 0 auto;
-    color: aliceblue;
-    font-weight: normal;
+  width: 100%;
+  color: aliceblue;
+  font-weight: normal;
 }
 .services .results,
 .boletos,
 .dados,
 .preparo {
-    width: 100%;
-    background-color: none;
-    padding: 4.6875rem 3.125rem;
-    margin-top: 3.125rem;
-    border-radius: 1.25rem 1.25rem 0 0;
-    font-size: 1.25rem;
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  font-size: 20px;
+  margin-top: 6.25rem;
+  background-color: none;
+  padding: 40px 0.9375rem;
 }
 .services .results:hover,
 .boletos:hover,
 .dados:hover,
 .preparo:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
-    padding: 3.75rem 3.125rem;
-    background: -webkit-linear-gradient(left, #338092, #1faa80);
-    background: -moz-linear-gradient(left, #338092, #1faa80);
-    background: -ms-linear-gradient(left, #338092, #1faa80);
-    background: -o-linear-gradient(left, #338092, #1faa80);
-    background: linear-gradient(to right, #338092, #1faa80);
+  cursor: pointer;
+  background: -webkit-linear-gradient(left, #338092, #1faa80);
+  background: -moz-linear-gradient(left, #338092, #1faa80);
+  background: -ms-linear-gradient(left, #338092, #1faa80);
+  background: -o-linear-gradient(left, #338092, #1faa80);
+  background: linear-gradient(to right, #338092, #1faa80);
 }
 
 .tags p {
-    color: aliceblue;
+  color: aliceblue;
 }
 .services ion-icon {
-    color: #000000;
-    background-color: #fff;
-    padding: 1.25rem;
-    border-radius: 3.125rem;
-    font-size: 3.125rem;
-    margin-bottom: 1.25rem;
+  color: #000000;
+  background-color: none;
+  color: #183f02;
+  font-size: 3.125rem;
+  margin-bottom: 1.25rem;
 }
 .tags {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 .tags a {
-    all: unset;
+  all: unset;
 }
 
 .estrutura {
-    display: flex;
-    height: 56.25rem;
+  display: flex;
+  height: 76.25rem;
 }
 .estrutura p {
-    font-size: 40px;
-    color: #808080;
-    font-weight: bold;
-    position: absolute;
-    margin: 300px 0 0 50px;
+  font-size: 40px;
+  color: #808080;
+  font-weight: bold;
+  position: absolute;
+  margin: 18.75rem 0 0 3.125rem;
 }
 
 .estrutura > p:nth-child(2) {
-    color: #109c62;
-    margin: 340px 0 0 50px;
+  color: #109c62;
+  margin: 340px 0 0 50px;
 }
 .estrutura span {
-    font-size: 30px;
-    color: rgb(88, 85, 85);
-    width: 30%;
-    margin: 400px 0 0 50px;
-    height: 300px;
-    text-align: justify;
+  font-size: 1.875rem;
+  color: rgb(88, 85, 85);
+  width: 30%;
+  margin: 25rem 0 0 3.125rem;
+  height: 18.75rem;
+  text-align: justify;
 }
 .estrutura img {
-    width: 60%;
-    position: absolute;
-    top: 1550px;
-    right: 0px;
-    border-radius: 140px 0px 0px 140px;
+  width: 60%;
+  position: absolute;
+  top: 1650px;
+  right: 0px;
+  border-radius: 140px 0px 0px 140px;
 }
 .tabs .hospital {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 .footer-sup {
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    border-top: 1px solid green;
-    border-bottom: 1px solid green;
-    height: 200px;
+  display: flex;
+  font-size: 1.05rem;
+  align-items: center;
+  border-top: 0.0625rem solid green;
+  border-bottom: 0.0625rem solid green;
+  height: 12.5rem;
 }
 
 .footer-sup img {
-    width: 200px;
-    margin-right: 100px;
+  width: 12.5rem;
+  margin-right: 6.25rem;
 }
 .footer-sup h3 {
-    font-size: 25px;
-    color: #2b4d3f;
+  font-size: 1.1625rem;
+  color: #2b4d3f;
 }
 
 .footer-sup p {
-    color: #3a8365;
-    margin-top: 10px;
-    padding-right: 15px;
+  color: #3a8365;
+  margin-top: 0.625rem;
+  padding-right: 0.9375rem;
 }
 
 .footer-inf {
-    background-color: #109c62;
-    height: 100%;
-    padding: 50px 100px 100px 100px;
-    display: flex;
-    font-size: 20px;
-    justify-content: space-around;
+  background-color: #109c62;
+  height: 100%;
+  padding: 3.125rem 6.25rem 6.25rem 6.25rem;
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-around;
 }
 .footer-inf h3 {
-    color: #f1f1f1;
-    font-size: 30px;
-    margin-bottom: 20px;
+  color: #f1f1f1;
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
 }
 
 .footer-inf p {
-    margin-top: 10px;
-    color: #f1f1f1;
-    background-color: #109c62;
+  margin-top: 0.625rem;
+  color: #f1f1f1;
+  background-color: #109c62;
 }
 .footer-inf a,
 .tags a {
-    text-decoration: none;
+  text-decoration: none;
 }
