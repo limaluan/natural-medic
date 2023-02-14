@@ -154,34 +154,33 @@ header button:hover {
 
 .estrutura {
   display: flex;
-  height: 76.25rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  height: 66.25rem;
 }
-.estrutura p {
-  font-size: 40px;
+.estrutura h2 {
+  font-size: 1.875rem;
   color: #808080;
   font-weight: bold;
-  position: absolute;
-  margin: 18.75rem 0 0 3.125rem;
 }
 
-.estrutura > p:nth-child(2) {
+.estrutura h3 {
+  font-size: 1.875rem;
   color: #109c62;
-  margin: 340px 0 0 50px;
 }
-.estrutura span {
+.estrutura p {
   font-size: 1.875rem;
   color: rgb(88, 85, 85);
   width: 30%;
-  margin: 25rem 0 0 3.125rem;
-  height: 18.75rem;
   text-align: justify;
 }
 .estrutura img {
   width: 60%;
   position: absolute;
-  top: 1650px;
-  right: 0px;
-  border-radius: 140px 0px 0px 140px;
+  top: 103.125rem;
+  right: 0rem;
+  border-radius: 8.75rem 0rem 0rem 8.75rem;
 }
 .tabs .hospital {
   font-size: 100px;
