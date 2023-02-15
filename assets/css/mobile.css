@@ -1,68 +1,72 @@
 /* Arquivo responsivo mobile */
 header {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-  height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    height: auto;
 }
 header .linksHeader {
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 header button {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 .home {
-  height: fit-content;
+    height: fit-content;
 }
 .home > img {
-  display: none;
+    display: none;
 }
 
 .home .title {
-  font-size: 1rem;
-  margin: 0 1rem 3rem 0;
+    font-size: 1rem;
+    margin: 0 1rem 3rem 0;
 }
 
 .services {
-  width: 100vw;
-  height: 100%;
-  margin: 0;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
 }
 .services .tags {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .services .results,
 .boletos,
 .dados,
 .preparo {
-  width: 100vw;
+    width: 100vw;
 }
 
 .estrutura {
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 .estrutura p {
-  font-size: 1.275rem;
-  width: 80vw;
-  margin: 0 auto;
-  justify-content: center;
-  text-align: justify;
+    font-size: 1.275rem;
+    width: 100%;
+    text-align: justify;
 }
 
 .estrutura img {
-  position: static;
-  border-radius: 10%;
-  margin-top: 1.25rem;
-  height: 18.75rem;
-  width: 18.75rem;
+    position: relative;
+    border-radius: 10%;
+    margin: 1.25rem 0;
+    max-width: 18.75rem;
+    width: 100%;
+}
+
+.footer-sup {
+    flex-direction: column;
+}
+
+.footer-inf {
+    flex-direction: column;
 }
