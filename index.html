@@ -106,9 +106,9 @@
       <p id="cep-result"></p>
     </div>
     
-    <div class="comentarios-container">
+    <div onload="getAllPosts()" class="comentarios-container">
       <h1>Comentários</h1>
-      <form class="fazer-comentario">
+      <form id="form-comentarios" class="fazer-comentario">
         <p>Faça um comentário</p>
         <div>
           <input
@@ -117,7 +117,6 @@
             id="email"
             placeholder="Digite seu melhor e-mail"
             required
-            class="form-control"
           />
         </div>
         <div>
@@ -126,12 +125,11 @@
             id="body"
             placeholder="Digite seu comentário"
             required
-            class="form-control"
           ></textarea>
         </div>
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
-      <div class="lista-comentarios">
+      <div id="lista-comentarios" class="lista-comentarios">
         <h1 class="lista-comentarios-vazio">Nenhum comentário disponível.</h1>
       </div>
     </div>
@@ -205,7 +203,7 @@
         >
       </div>
     </div>
-    <script type='text/javascript' src='./assets/listagemusuarios.js'></script>
+    <script src="./assets/js/scriptcomentario.js"></script>
     <script src="./assets/js/scriptCep.js"></script>
     </footer>
   </body>

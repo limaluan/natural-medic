@@ -354,7 +354,8 @@ header button:hover {
   margin: auto;
   padding: 2rem;
   border-radius: 0.5rem;
-  height: 20rem;
+  height: 30rem;
+  
   background: -webkit-linear-gradient(left, #338092, #1bcc97);
   background: -moz-linear-gradient(left, #338092, #1bcc97);
   background: -ms-linear-gradient(left, #338092, #1bcc97);
