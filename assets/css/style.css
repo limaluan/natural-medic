@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+button {
+  all: unset;
+  background-color: #008037;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1a1;
+  padding: 0 1rem;
+  height: 5rem;
+}
+
+header > a img {
+  width: 100%;
+}
+
+header > a {
+  min-width: 8rem;
+  max-width: 9rem;
+  width: 20%;
+}
+
+header .linksHeader {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+header .linksHeader a {
+  color: #008037;
+}
+
+header .linksHeader a:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+header button {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+header button:hover {
+  opacity: 80%;
+  transition: 0.2s;
+}
+
+.home {
+  height: calc(100vh - 5rem);
+}
+.home .image-hero {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.home .home-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+.home .home-intro img {
+  width: 50%;
+  max-width: 25rem;
+  margin-left: 1rem;
+}
+.home .title {
+  padding: 1rem;
+  max-width: 35rem;
+  opacity: 50%;
+  font-size: 2rem;
+  border-radius: 0rem 1.25rem 1.25rem 0;
+  background-color: #14774f;
+  color: #ffffff;
+}
+.services {
+  width: 100vw;
+  padding: 5.625rem;
+  height: 37.5rem;
+  margin-bottom: 3.125rem;
+  background: -webkit-linear-gradient(left, #338092, #1bcc97);
+  background: -moz-linear-gradient(left, #338092, #1bcc97);
+  background: -ms-linear-gradient(left, #338092, #1bcc97);
+  background: -o-linear-gradient(left, #338092, #1bcc97);
+  background: linear-gradient(to right, #338092, #1bcc97);
+}
+.services h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.services h1 span {
+  color: #303a36;
+}
+.services h2 {
+  width: 100%;
+  color: aliceblue;
+  font-weight: normal;
+}
+.services .results,
+.boletos,
+.dados,
+.preparo {
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  font-size: 20px;
+  margin-top: 6.25rem;
+  background-color: none;
+  padding: 40px 0.9375rem;
+}
+.services .results:hover,
+.boletos:hover,
+.dados:hover,
+.preparo:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(left, #338092, #1faa80);
+  background: -moz-linear-gradient(left, #338092, #1faa80);
+  background: -ms-linear-gradient(left, #338092, #1faa80);
+  background: -o-linear-gradient(left, #338092, #1faa80);
+  background: linear-gradient(to right, #338092, #1faa80);
+}
+
+.tags p {
+  color: aliceblue;
+}
+.services ion-icon {
+  color: #000000;
+  background-color: none;
+  color: #183f02;
+  font-size: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+.tags {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.tags a {
+  all: unset;
+}
+
+.estrutura {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50rem;
+  padding: 2rem 3rem;
+  position: relative;
+}
+.estrutura h2 {
+  font-size: 1.875rem;
+  color: #808080;
+  font-weight: bold;
+}
+
+.estrutura h3 {
+  font-size: 1.875rem;
+  color: #109c62;
+}
+.estrutura p {
+  font-size: 1.875rem;
+  color: rgb(88, 85, 85);
+  width: 30%;
+  text-align: justify;
+}
+.estrutura img {
+  width: 60%;
+  position: absolute;
+  top: 2rem;
+  right: 0rem;
+  border-radius: 8.75rem 0rem 0rem 8.75rem;
+}
+.tabs .hospital {
+  font-size: 100px;
+}
+
+.footer-sup {
+  display: flex;
+  font-size: 1.05rem;
+  align-items: center;
+  border-top: 0.0625rem solid green;
+  padding: 1rem;
+  gap: 1rem;
+  color: #3a8365;
+}
+
+.footer-sup > div {
+  width: 100%;
+}
+
+.footer-sup img {
+  width: 100%;
+  max-width: 12.5rem;
+}
+
+.footer-sup h3 {
+  font-size: 1.1625rem;
+  color: #2b4d3f;
+}
+
+.footer-inf {
+  background-color: #109c62;
+  padding: 1rem;
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-around;
+  gap: 1rem;
+  color: #f1f1f1;
+}
+.footer-inf h3 {
+  font-size: 1.8rem;
+}
+
+.formulario {
+  display: flex;
+  font-size: 22px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: #fff;
+  height: 30rem;
+  margin-bottom: 3rem;
+
+  background: -webkit-linear-gradient(left, #338092, #1bcc97);
+  background: -moz-linear-gradient(left, #338092, #1bcc97);
+  background: -ms-linear-gradient(left, #338092, #1bcc97);
+  background: -o-linear-gradient(left, #338092, #1bcc97);
+  background: linear-gradient(to right, #338092, #1bcc97);
+}
+
+.formulario h1 svg {
+  width: 26px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(5deg) brightness(101%)
+    contrast(100%);
+}
+
+.formulario input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  width: 300px;
+}
+
+.formulario button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  background-color:#109c62;
+}
+
+.formulario button:hover {
+  filter: brightness(0.8);
+  transition: filter 200ms;
+  cursor: pointer;
+}
