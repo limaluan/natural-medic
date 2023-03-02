@@ -1,9 +1,11 @@
 // API de CEP
 
-const pesquisarCEP = async () => {
-    let raca = document.getElementById("cep").ariaValueMax;
 
-    if (raca.trim() === "") {
+
+const pesquisarCEP = async () => {
+    let cep = document.getElementById("cep").value;
+
+    if (cep.trim() === "") {
         document.getElementById("resposta").innerHTML = "Digite um CEP válido";
     } else {
         await fetch(`https://viacep.com.br/ws/${cep}/json/` , {
