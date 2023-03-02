@@ -94,6 +94,16 @@ nav a:hover {
   color: var(--black);
 }
 
+a.selected {
+  text-decoration: underline;
+  color: var(--black);
+  cursor: default;
+}
+
+a.selected svg {
+  filter: initial;
+}
+
 /* --ADMIN AREA */
 .admin-area {
   display: flex;
