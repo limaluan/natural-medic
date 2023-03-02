@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Red+Hat+Text&display=swap" rel="stylesheet">
     <title>Natural Medic</title>
   </head>
-  <body>
+  <body onload="listagemUsuarios()">
     <header class="header-container">
       <div class="header-content">
         <div>
@@ -74,24 +74,15 @@
           <p><a href="../index.html">Painel de Administração</a> > <a class="selected">Clientes</a> </p>
         </div>
        <h1>Lista de Clientes</h1>
-       <ul class="clients-list">
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
-        <li><p>Nome: João-Silva<br/>Telefone: 79 9 9999-31167</p></li>
+       <div class="search-area">
+         <input id="clients-search" class="clients-search" type="text" placeholder="Buscar por clientes" />
+        <button id="search-button">Buscar</button>
+       </div>
+       <ul id="clients-list" class="clients-list">
        </ul>
       </div>
     </main>
+
+    <script src="../../assets/js/listagemusuarios.js"></script>
   </body>
 </html>

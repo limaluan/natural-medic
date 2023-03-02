@@ -41,3 +41,30 @@
   background: #aa9999;
   border-radius: 10px;
 }
+
+/* -- SEARCH AREA */
+.search-area {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.search-area input, .search-area button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.search-area input {
+  width: 90%;
+}
+
+.search-area button {
+  width: 10%;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.8);
+  transition: filter 200ms;
+}
