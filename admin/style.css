@@ -1,0 +1,166 @@
+:root {
+  --green-100: #e2f5ef;
+  --green-300: #e3f9e7;
+  --green-500: #3cbd96; /* Buttons background */
+  --green-700: #204945; /* Headings and topics */
+
+  --gray-400: #5a5f6a; /* Nav Links */
+  --gray-300: #777e90; /* Sub-texts */
+  --gray-200: #c9c9c9; /* Input-Borders and Input-Placeholders */
+  --gray-100: #e5e5e5; /* Input-Borders */
+
+  --red-500: #e74c3c; /* Error messages */
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* -- GENERAL RULES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f0f5;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+svg {
+  height: 1.6rem;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+[class$="container"] {
+  width: 100vw;
+}
+
+[class$="content"] {
+  width: 80vw;
+  max-width: 160rem;
+  margin: auto;
+}
+
+/* -- HEADER */
+.header-content {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.header-content > div {
+  display: flex;
+  gap: 1rem;
+}
+
+/* -- NAV */
+nav {
+  display: flex;
+  gap: 3rem;
+  color: var(--gray-400);
+}
+
+nav svg {
+  filter: invert(35%) sepia(10%) saturate(595%) hue-rotate(183deg)
+    brightness(94%) contrast(80%);
+}
+
+nav a:hover svg {
+  filter: initial;
+}
+
+nav a {
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav a:hover {
+  color: var(--black);
+}
+
+/* --ADMIN AREA */
+.admin-area {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.admin-area svg {
+  cursor: pointer;
+  filter: invert(35%) sepia(10%) saturate(595%) hue-rotate(183deg)
+    brightness(94%) contrast(80%);
+}
+
+.admin-area svg:hover {
+  filter: initial;
+}
+
+.admin {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--gray-100);
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+.admin img {
+  height: 5rem;
+  border-radius: 1rem;
+}
+
+.admin .admin-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  background: url("https://media.licdn.com/dms/image/D4D03AQFLlSHgOrRIRg/profile-displayphoto-shrink_800_800/0/1674501468211?e=1683158400&v=beta&t=1mCFys9qMD0_V_uyDPWod8dvhMs52uMJOzi4EncKyxU");
+  background-size: cover;
+}
+
+.admin:hover {
+  cursor: pointer;
+}
+
+/* --USER TRAIL */
+.user-trail p {
+  font-size: 1.2rem;
+  color: var(--gray-400);
+  background-color: var(--gray-200);
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* --MAIN SCREEN DASHBOARD */
+.main-screen {
+  width: 100%;
+  height: 65vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.main-screen p {
+  margin: auto;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
