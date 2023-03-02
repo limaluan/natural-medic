@@ -2,6 +2,7 @@ let listaNomes = [];
 let inputBusca;
 let numeroUsuarios = 10;
 
+
 const campoUsuarios = document.getElementById("clients-list");
 const botao = document.getElementById("search-button");
 
@@ -49,6 +50,7 @@ async function listagemUsuarios(paramBusca) {
             campoUsuarios.innerHTML += `<li><p>Nome: ${words
               .toString()
               .replace(",", " ")}<br/>Telefone: 79 9 9999-31167</p></li>`;
+
           }
         } else {
           campoUsuarios.innerHTML = "";
