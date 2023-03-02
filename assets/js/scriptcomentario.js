@@ -29,10 +29,11 @@ async function getAllPosts() {
     const link = document.createElement("a");
     const separar = document.createElement("hr");
 
+    title.innerText = post.title;
     title.innerText = post.email;
     body.innerText = post.body;
     link.innerText = "Comentar post";
-    link.setAttribute("href", `./enviarcomentario.html?id=${post.id}`);
+    link.setAttribute("href", `./novocomentario.html?id=${post.id}`);
 
     div.appendChild(title);
     div.appendChild(body);
