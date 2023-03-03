@@ -1,4 +1,5 @@
 const campoNomeContato = document.getElementById("nome-contato");
+const campoLabelNome = document.getElementById("label-nome");
 const campoLabelTelefone = document.getElementById("label-telefone");
 const campoTelefoneContato = document.getElementById("telefone-contato");
 const campoLabelEmail = document.getElementById("label-email");
@@ -27,7 +28,15 @@ const enviarFormulario = () => {
   validarTelefone(telefoneContato);
   validarEmail(emailContato);
 
-  if (telefoneValido && emailValido) {
+  !nomeContato &&
+    (campoLabelNome.innerHTML =
+      '<span class="error"> *É necessário informar o nome!</span>');
+
+  if (telefoneValido && emailValido && nomeContato) {
+    campoLabelNome.innerHTML = "";
+    campoLabelTelefone.innerHTML = ``;
+    campoLabelEmail.innerHTML = ``;
+
     const novoContato = {
       nomeContato,
       telefoneContato,
@@ -47,12 +56,10 @@ const validarTelefone = (telefone) => {
     /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/;
 
   if (!regexTelefone.test(telefone)) {
-    campoLabelTelefone.innerHTML = `Telefone: <span style="color:red;"> Insira um número no formato (33) 3 3333-3333</span>`;
+    campoLabelTelefone.innerHTML = `<span class="error"> *Insira um número no formato (33) 3 3333-3333</span>`;
 
     telefoneValido = false;
   } else {
-    campoLabelTelefone.innerHTML = `Telefone:`;
-
     telefoneValido = true;
   }
 };
@@ -63,12 +70,10 @@ const validarEmail = (email) => {
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
 
   if (!regexEmail.test(email)) {
-    campoLabelEmail.innerHTML = `Email: <span style="color:red;">Insira um email válido</span>`;
+    campoLabelEmail.innerHTML = `<span class="error">*Insira um email válido</span>`;
 
     emailValido = false;
   } else {
-    campoLabelEmail.innerHTML = `E-mail:`;
-
     emailValido = true;
   }
 };

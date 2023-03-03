@@ -34,44 +34,72 @@
     <form>
       <h1>Contato Clínica</h1>
       <h2>Central de Atendimento da Natural Medic</h2>
-      <label for="nome">Nome: </label>
-      <input id="nome-contato" type="text" placeholder="Nome completo..." />
-      <label id="label-telefone" for="fone">Telefone:</label>
-      <input
-        id="telefone-contato"
-        type="text"
-        name="fone"
-        placeholder="(xx) xxxxx-xxxx"
-      />
-      <br />
-      <label id="label-email" for="email">E-mail:</label>
-      <input
-        id="email-contato"
-        type="email"
-        name="email"
-        placeholder="Digite seu e-mail"
-      />
-      <label for="assunto">Assunto:</label>
-      <select id="assunto-contato" name="assuntos">
-        <option value="duvidas">Especialidades</option>
-        <option value="cobertura">Planos</option>
-        <option value="outros">Outros</option>
-      </select>
-      <br />
-      <br />
-      <label for="mensagem">Digite a mensagem:</label><br />
-      <textarea
-        id="mensagem-contato"
-        name="mensagem"
-        cols="60"
-        rows="10"
-      ></textarea>
-      <input
-        id="botao-contato"
-        type="button"
-        value="Enviar"
-        onclick="enviarFormulario()"
-      />
+      <div class="grid-form">
+        <div>
+          <div class="form-item">
+            <label for="nome">Nome: </label>
+            <div>
+              <input
+                id="nome-contato"
+                type="text"
+                placeholder="Nome completo..."
+              />
+              <p id="label-nome"></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="form-item">
+            <label for="fone">Telefone:</label>
+            <div>
+              <input
+                id="telefone-contato"
+                type="text"
+                name="fone"
+                placeholder="(xx) xxxxx-xxxx"
+              />
+              <p id="label-telefone"></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="form-item">
+            <label for="email">E-mail:</label>
+            <div>
+              <input
+                id="email-contato"
+                type="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+              />
+              <p id="label-email"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-item">
+          <label for="assunto">Assunto:</label>
+          <select id="assunto-contato" name="assuntos">
+            <option value="duvidas">Especialidades</option>
+            <option value="cobertura">Planos</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-textarea">
+        <label for="mensagem">Digite a mensagem:</label><br />
+        <textarea
+          id="mensagem-contato"
+          name="mensagem"
+          cols="60"
+          rows="10"
+        ></textarea>
+        <input
+          id="botao-contato"
+          type="button"
+          value="Enviar"
+          onclick="enviarFormulario()"
+        />
+      </div>
     </form>
 
     <div class="footer-sup">
