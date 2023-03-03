@@ -1,7 +1,7 @@
 let listaNomes = [];
 let inputBusca;
 let numeroUsuarios = 10;
-
+let listaCarregada = false;
 
 const campoUsuarios = document.getElementById("clients-list");
 const botao = document.getElementById("search-button");
@@ -14,10 +14,9 @@ botao.addEventListener("click", async function () {
 });
 
 async function listagemUsuarios(paramBusca) {
-  if (listaNomes.length === 0) {
+  if (!listaCarregada) {
     await fetch(
       `https://geradorbrasileiro.com/api/faker/usuario?limit=${numeroUsuarios}`,
-
       {
         method: "GET",
         headers: {
@@ -33,6 +32,9 @@ async function listagemUsuarios(paramBusca) {
       })
       .then((usuario) => {
         listaNomes = usuario.values;
+        listaCarregada = true;
+      });
+  }
 
         if (paramBusca) {
           let listaNomesFiltrada = listaNomes.filter((nome) =>
@@ -65,10 +67,6 @@ async function listagemUsuarios(paramBusca) {
             campoUsuarios.innerHTML += `<li><p>Nome: ${words
               .toString()
               .replace(",", " ")}<br/>Telefone: 79 9 9999-31167</p></li>`;
-          }
-        }
-
-        listaNomes = [];
-      });
+    }
   }
 }
