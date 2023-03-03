@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+textarea::placeholder {
+  font-family: "Poppins", sans-seri;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -289,7 +293,6 @@ header button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
   margin-bottom: 3rem;
 }
 
@@ -317,7 +320,6 @@ header button:hover {
 .fazer-comentario div {
   display: flex;
   justify-content: center;
-  gap: 1rem;
 }
 
 .fazer-comentario input,
@@ -325,6 +327,7 @@ header button:hover {
   width: 70%;
   padding: 0.5rem;
   font-size: 1rem;
+  border: #808080 1px solid;
   border-radius: 0.5rem;
 }
 
@@ -344,37 +347,36 @@ header button:hover {
 
 /* -- Lista Comentários */
 .lista-comentarios {
-  background-color: #b1b1b1;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   overflow-y: scroll;
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding: 2rem;
   border-radius: 0.5rem;
   height: 30rem;
-  
-  background: -webkit-linear-gradient(left, #338092, #1bcc97);
-  background: -moz-linear-gradient(left, #338092, #1bcc97);
-  background: -ms-linear-gradient(left, #338092, #1bcc97);
-  background: -o-linear-gradient(left, #338092, #1bcc97);
-  background: linear-gradient(to right, #338092, #1bcc97);
 }
 
 .comentario {
+  flex-direction: column;
   border-bottom: 1px solid #808080;
   background-color: #fff;
-  padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-size: 12px;
+  padding: 1rem;
+}
+
+.comentario:nth-child(1) {
+  margin-top: 4rem;
 }
 
 .comentario .email {
   color: #808080;
-  font-size: 18px;
-  margin-bottom: 1rem;
+  font-size: 14px;
 }
 
 .lista-comentarios-vazio {
@@ -385,4 +387,18 @@ header button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.lista-comentarios::-webkit-scrollbar {
+  width: 10px;
+}
+
+.lista-comentarios::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #008037;
+  border-radius: 10px;
+}
+
+.lista-comentarios::-webkit-scrollbar-thumb {
+  background: #338092;
+  border-radius: 10px;
 }
