@@ -1,0 +1,47 @@
+/* --INTRO SECTION */
+.intro-container {
+  max-height: 90vh;
+}
+
+.intro-content {
+  position: relative; 
+  height: 90vh;
+}
+
+.doctor-background {
+  max-height: 90vh;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
+.intro-summary {
+  width: 40%;
+}
+
+.intro-summary img {
+  max-width: 40rem;
+  padding-top: 5rem;
+}
+
+.intro-summary h2 {
+  color: #fff;
+  font-size: 3rem;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-top: 5rem;
+}
+
+.intro-summary h2::before {
+  content: "";
+  background-color: var(--green-500);
+  position: absolute;
+  top: -3.2rem;
+  left: -54rem;
+  width: 200%;
+  height: 180%;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  z-index: -1;
+}
