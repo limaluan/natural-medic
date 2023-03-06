@@ -60,6 +60,9 @@ header button a:hover {
   cursor: pointer;
 }
 
+.linksHeader > button {
+  cursor: pointer;
+}
 
 header a {
   margin: 0px 20px;
