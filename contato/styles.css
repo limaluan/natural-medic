@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
 
 * {
   padding: 0;
@@ -19,14 +19,52 @@ header img {
   left: 10px;
 }
 
+header button {
+  all: unset;
+  color: #ffffff;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #008037;
+}
+
+header button:hover {
+  opacity: 80%;
+  transition: 0.2s;
+}
+
+header button a {
+  color: #ffffff;
+}
+
+header button a:hover {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
 .linksHeader {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'Poppins', sans-seri;
+  font-family: "Poppins", sans-seri;
   font-weight: 500;
+}
+
+.linksHeader > div {
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.linksHeader > div > a {
+  cursor: pointer;
 }
 
 header a {
@@ -59,7 +97,7 @@ header a:nth-child(4):hover {
   color: #ffffff;
 }
 .contato {
-  font-family: 'Poppins', sans-seri;
+  font-family: "Poppins", sans-seri;
   height: 800px;
   padding: 180px 0px 0px 200px;
 }
