@@ -32,7 +32,7 @@ const pesquisarCEP = async (cepe) => {
         } else {
           document.getElementById(
             "cep-result"
-          ).innerHTML = `<p>Endereço: ${data.logradouro}, Número: ${numero}, Bairro: ${data.bairro}, Cidade: ${data.localidade}, UF: ${data.uf}</p>`;
+          ).innerHTML = `<p>A clínica mais próxima de você fica em ${data.logradouro}, nº ${numero}, Bairro: ${data.bairro}, Cidade: ${data.localidade}, UF: ${data.uf}</p>`;
         }
       });
   }
