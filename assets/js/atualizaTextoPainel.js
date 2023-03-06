@@ -1,21 +1,24 @@
-const iconeLogout = document.getElementById("icone-logout");
+const userPanel = document.getElementById("user-panel");
+const admPanel = document.getElementById("adm-panel");
+const loginButton = document.getElementById("login-button");
+const admNav = document.getElementById("adm-nav");
 
-iconeLogout.addEventListener("click", () => {
-  logout();
-});
-
-window.addEventListener(
-  "load",
-
-  () => {
-    const campoTextoAdmTopo = document.getElementById("nome-usuario-topo");
-    const campoTextoSaudacaoAdm = document.getElementById("texto-saudacao-adm");
-
-    let nomeUsuario = sessionStorage.getItem("username");
-    campoTextoAdmTopo.innerText = nomeUsuario;
-    campoTextoSaudacaoAdm.innerText = `Seja bem vindo(a), ${nomeUsuario}!`;
+window.addEventListener("load", () => {
+  let nomeUsuario = sessionStorage.getItem("username");
+  if (admPanel) {
+    admPanel.innerText = nomeUsuario;
+  } else if (nomeUsuario) {
+    userPanel.classList.remove("hidden");
+    loginButton.classList.add("hidden");
+    userPanel.innerHTML = `<h3>Olá, ${nomeUsuario}!</h3>
+      <a id="logout-button" onclick="logout()">Logout</a>`;
+    sessionStorage.getItem("role") === "adm" &&
+      admNav.classList.remove("hidden");
+  } else {
+    userPanel.classList.add("hidden");
+    loginButton.classList.remove("hidden");
   }
-);
+});
 
 const logout = () => {
   sessionStorage.clear();

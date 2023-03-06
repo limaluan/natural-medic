@@ -30,9 +30,14 @@
         <a href="./index.html">Página Inicial</a>
         <a href="./sobre/index.html">Sobre</a>
         <a href="./contato/index.html">Contato</a>
+        <a href="./admin/index.html" id="adm-nav" class="hidden">Painel de Admnistração</a>
       </div>
 
-      <button><a href="./login/index.html">Entrar</a></button>
+      <div id="user-panel" class="user-panel hidden">
+        <h3>Olá, Vinicius!</h3>
+        <a onclick="logout()" id="logout-button">Logout</a>
+      </div>
+      <button id="login-button"><a href="./login/index.html">Entrar</a></button>
     </header>
 
     <div class="home">
@@ -202,6 +207,7 @@
         >
       </div>
     </div>
+    <script src="./assets/js/atualizaTextoPainel.js"></script>
     <script src="./assets/js/scriptcomentario.js"></script>
     <script src="./assets/js/scriptCep.js"></script>
     </footer>

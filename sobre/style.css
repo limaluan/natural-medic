@@ -29,6 +29,38 @@ header img {
   font-weight: 500;
 }
 
+header button {
+  all: unset;
+  color: #ffffff;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #008037;
+}
+
+header button:hover {
+  opacity: 80%;
+  transition: 0.2s;
+}
+
+header button a {
+  color: #ffffff;
+}
+
+header button a:hover {
+  color: #fff;
+}
+
+.linksHeader > div {
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.linksHeader > div > a {
+  cursor: pointer;
+}
+
+
 header a {
   margin: 0px 20px;
   color: #008037;
@@ -57,6 +89,13 @@ header a:nth-child(4):hover {
   background-color: #000000;
   transition: 0.5s;
   color: #ffffff;
+}
+
+.hidden {
+  display: none;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .about {
