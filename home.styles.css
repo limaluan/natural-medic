@@ -103,6 +103,7 @@
 
 .services-items a:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 200ms;
 }
 
 .services-items p {
@@ -148,4 +149,19 @@
   border-radius: 10rem 0 0 10rem;
   position: absolute;
   right: 0;
+}
+
+/* -- FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  height: 20vh;
+  border-top: 1px solid var(--green-500);
+  font-size: 1.4rem;
+}
+
+footer img {
+  height: 18vh;
 }
