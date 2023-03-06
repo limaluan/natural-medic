@@ -57,10 +57,7 @@ const fazerLogin = async (usuario, senha) => {
 
 const redirecionaLogin = (data) => {
   sessionStorage.setItem("username", data.firstName);
-
-  if (data.email === emailAdm) {
-    window.location.href = "../admin/index.html";
-  } else {
-    window.location.href = "../logado/index.html";
-  }
+  data.email === emailAdm && sessionStorage.setItem("role", "adm");
+  
+  window.location.href = "../index.html";
 };

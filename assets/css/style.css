@@ -65,6 +65,20 @@ header .linksHeader a:hover {
   transform: scale(1.1);
 }
 
+.user-panel {
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.user-panel > a {
+  cursor: pointer;
+  color: #3a8365;
+}
+
+.user-panel > a:hover {
+  color: #000;
+}
+
 header button {
   color: #ffffff;
   padding: 0.5rem 1rem;
@@ -74,6 +88,13 @@ header button {
 header button:hover {
   opacity: 80%;
   transition: 0.2s;
+}
+
+.hidden {
+  display: none;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .home {
