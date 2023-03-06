@@ -1,0 +1,51 @@
+/* -- FAMILY SECTION */
+.section-container {
+  height: 75vh;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.section-content article {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.article-title {
+  font-size: 3.6rem;
+  color: var(--black-400);
+}
+
+.article-title span {
+  color: var(--green-300);
+}
+
+.article-subtitle {
+  font-size: 1.8rem;
+}
+
+.section-content button {
+  align-self: center;
+}
+
+.section-content img {
+  width: 50%;
+  border-radius: 10rem 0 0 10rem;
+  position: absolute;
+  right: 0;
+}
+
+/* -- BUSINESS SECTION */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse img {
+  left: 0;
+  border-radius: 0 10rem 10rem 0;
+}
