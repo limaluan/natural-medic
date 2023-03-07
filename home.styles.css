@@ -150,3 +150,53 @@
   position: absolute;
   right: 0;
 }
+
+/* --COMMENTS SECTION */
+.comments-section-container {
+  background-color: var(--gray-300);
+  padding: 2rem;
+}
+
+.comments-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comments-section-content form {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  gap: 1rem;
+}
+
+.comments-section-content textarea {
+  height: 10rem;
+}
+
+.comments-section-content input,
+.comments-section-content textarea {
+  padding: 1rem;
+}
+
+.comments-list {
+  width: 60rem;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+
+.comments-list li {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.comments-list h3 {
+  color: var(--black-400);
+  font-size: 1.6rem;
+}
