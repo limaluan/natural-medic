@@ -34,7 +34,9 @@
           <a>Ínicio</a>
           <a href="./sobre/index.html">Sobre</a>
           <a href="./contato/index.html">Contato</a>
-          <a id="adm-nav" class="hidden" href="./admin/index.html">Painel de Admnistração</a>
+          <a id="adm-nav" class="hidden" href="./admin/index.html"
+            >Painel de Admnistração</a
+          >
         </nav>
         <a id="login-button" href="./login/index.html"
           ><button>Entrar</button></a
@@ -120,26 +122,26 @@
             Encontre a clínica mais próxima!
             <img src="./assets/img/gps.svg" alt="" />
           </h1>
-          <input type="number" placeholder="Digite o seu Cep" />
-          <p class="subtitle">
-            A clínica mais próxima da sua localização atual fica no endereço:
-          </p>
+          <input id="search-input" type="text" placeholder="Digite o seu Cep" />
+          <button id="search-button">Procurar</button>
+          <p id="cep-result" class="subtitle"></p>
         </div>
       </section>
 
       <section class="comments-section-container">
         <div class="comments-section-content">
           <h1 class="subtitle">Deixe seu comentário</h1>
-          <form>
-            <input type="text" placeholder="Digite seu email" />
+          <form id="comments-form">
+            <input id="email" type="text" placeholder="Digite seu email" />
             <textarea
+              id="body"
               placeholder="Digite o seu comentário"
               cols="30"
               rows="10"
             ></textarea>
             <button>Enviar</button>
           </form>
-          <ul class="comments-list">
+          <ul id="comments-list" class="comments-list">
             <li>
               <h3>email@email.com</h3>
               <p><i>Comentou:</i></p>
@@ -203,5 +205,7 @@
       </ul>
     </footer>
     <script src="./assets/js/userAuthCheck.js"></script>
+    <script src="./assets/js/scriptCep.js"></script>
+    <script src="./assets/js/scriptcomentario.js"></script>
   </body>
 </html>

@@ -55,18 +55,18 @@
         </div>
         <form>
           <div>
-            <input type="text" placeholder="Nome" />
-            <input type="text" placeholder="Sobrenome" />
-            <input type="email" placeholder="Email" />
-            <input type="tel" placeholder="Telefone" />
+            <input id="name" type="text" placeholder="Nome" />
+            <input id="last-name" type="text" placeholder="Sobrenome" />
+            <input id="email" type="email" placeholder="Email" />
+            <input id="tel" type="tel" placeholder="Telefone" />
             <textarea
-              id=""
+              id="message"
               cols="30"
               rows="10"
               placeholder="Digite sua mensagem aqui"
             ></textarea>
           </div>
-          <button>Enviar</button>
+          <button onclick="enviarFormulario()">Enviar</button>
         </form>
       </div>
     </main>
@@ -96,5 +96,6 @@
       </ul>
     </footer>
     <script src="../assets/js/userAuthCheck.js"></script>
+    <script src="../assets/js/formularioContato.js"></script>
   </body>
 </html>
