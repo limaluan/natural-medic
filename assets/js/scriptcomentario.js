@@ -41,6 +41,9 @@ async function postComment(comment) {
   if (!data.body) {
     alert("É necessário escrever alguma mensagem!");
   } else {
+    emailInput.value = "";
+    bodyInput.value = "";
+    alert("Obrigado por deixar seu comentário!");
     commentsContainer.innerHTML += `<li>
           <h3>${data.email}</h3>
           <p><i>Comentou:</i></p>
