@@ -111,3 +111,15 @@ footer {
 footer img {
   height: 18vh;
 }
+
+/* --OTHERS */
+/* Removes number arrows of input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
