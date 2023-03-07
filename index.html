@@ -34,8 +34,15 @@
           <a>Ínicio</a>
           <a href="./sobre/index.html">Sobre</a>
           <a href="./contato/index.html">Contato</a>
+          <a id="adm-nav" class="hidden" href="./admin/index.html">Painel de Admnistração</a>
         </nav>
-        <a href="./login/index.html"><button>Entrar</button></a>
+        <a id="login-button" href="./login/index.html"
+          ><button>Entrar</button></a
+        >
+        <div id="user-panel" class="user-panel hidden">
+          <h3>Olá, Samaritano!</h3>
+          <a href="#">Logout</a>
+        </div>
       </div>
     </header>
     <main>
@@ -67,22 +74,22 @@
             pelo seu celular ou computador!
           </p>
           <ul class="services-items">
-            <a href="./login/index.html">
+            <a href="#">
               <img
                 src="./assets/img/papernews.svg"
                 alt="Ícone de resultados de exames"
               />
               <p>Resultado de exames</p>
             </a>
-            <a href="./login/index.html">
+            <a href="#">
               <img src="./assets/img/files.svg" alt="Ícone de boletos" />
               <p>1ª e 2ª via de boletos</p>
             </a>
-            <a href="./login/index.html">
+            <a href="#">
               <img src="./assets/img/user.svg" alt="Ícone de Agendamentos" />
               <p>Agendamentos</p>
             </a>
-            <a href="./login/index.html">
+            <a href="#">
               <img src="./assets/img/health-case.svg" alt="Ícone de Exames" />
               <p>Preparo de exames</p>
             </a>
@@ -114,6 +121,9 @@
             <img src="./assets/img/gps.svg" alt="" />
           </h1>
           <input type="number" placeholder="Digite o seu Cep" />
+          <p class="subtitle">
+            A clínica mais próxima da sua localização atual fica no endereço:
+          </p>
         </div>
       </section>
 
@@ -192,5 +202,6 @@
         <li><p>(11) 1234-0000</p></li>
       </ul>
     </footer>
+    <script src="./assets/js/userAuthCheck.js"></script>
   </body>
 </html>

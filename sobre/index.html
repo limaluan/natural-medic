@@ -34,8 +34,17 @@
           <a href="../index.html">Ínicio</a>
           <a>Sobre</a>
           <a href="../contato/index.html">Contato</a>
+          <a id="adm-nav" class="hidden" href="./admin/index.html"
+            >Painel de Admnistração</a
+          >
         </nav>
-        <a href="../login/index.html"><button>Entrar</button></a>
+        <a id="login-button" href="./login/index.html"
+          ><button>Entrar</button></a
+        >
+        <div id="user-panel" class="user-panel hidden">
+          <h3>Olá, Samaritano!</h3>
+          <a href="#">Logout</a>
+        </div>
       </div>
     </header>
     <main>
@@ -100,5 +109,6 @@
         <li><p>(11) 1234-0000</p></li>
       </ul>
     </footer>
+    <script src="../assets/js/userAuthCheck.js"></script>
   </body>
 </html>

@@ -57,6 +57,11 @@ textarea {
   resize: none;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 [class$="container"] {
   width: 100%;
 }
@@ -92,6 +97,21 @@ textarea {
 }
 
 .header-content nav a:hover {
+  color: #000;
+  transform: scale(1.1);
+  transition: transform 200ms;
+}
+
+/* -- USER PANEL */
+.user-panel {
+  text-align: center;
+}
+
+.user-panel a {
+  color: var(--green-300);
+}
+
+.user-panel a:hover {
   color: #000;
   transform: scale(1.1);
   transition: transform 200ms;

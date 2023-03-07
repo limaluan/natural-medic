@@ -18,7 +18,7 @@
   border-bottom: 1px solid #fff;
 }
 
-form {
+.login-form {
   display: flex;
   flex-direction: column;
   align-items: center;

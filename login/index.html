@@ -35,17 +35,23 @@
           <a href="../sobre/index.html">Sobre</a>
           <a href="../contato/index.html">Contato</a>
         </nav>
-        <a><button>Entrar</button></a>
+        <a id="login-button" href="./login/index.html"
+          ><button>Entrar</button></a
+        >
+        <div id="user-panel" class="user-panel hidden">
+          <h3>Olá, Samaritano!</h3>
+          <a href="#">Logout</a>
+        </div>
       </div>
     </header>
     <main class="login-container">
       <div class="login-content">
-        <form>
+        <div class="login-form">
           <h1 class="login-title">Login</h1>
-          <input type="text" placeholder="Usuário"/>
-          <input type="password" placeholder="Senha"/>
-          <button>Login</button>
-        </form>
+          <input id="usuario-login" type="text" placeholder="Usuário" />
+          <input id="senha-login" type="password" placeholder="Senha" />
+          <button id="botao-login">Login</button>
+        </div>
       </div>
     </main>
     <footer class="content">
@@ -73,5 +79,6 @@
         <li><p>(11) 1234-0000</p></li>
       </ul>
     </footer>
+    <script src="../assets/js/formularioLogin.js"></script>
   </body>
 </html>

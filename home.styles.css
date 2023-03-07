@@ -5,7 +5,6 @@
 [class$="subtitle"] {
   font-size: 2.4rem;
 }
-
 /* --INTRO SECTION */
 .intro-container {
   height: 90vh;
@@ -153,7 +152,8 @@
 
 /* --CLINIC SECTION */
 .clinic-container {
-  height: 50vh;
+  /* height: 50vh; */
+  padding: 10rem;
   background: -webkit-linear-gradient(left, #338092, #1bcc97);
   background: -moz-linear-gradient(left, #338092, #1bcc97);
   background: -ms-linear-gradient(left, #338092, #1bcc97);
@@ -183,6 +183,8 @@
   padding: 2rem;
   width: 40rem;
   border-radius: 0.5rem;
+  border: 1px solid var(--gray-300);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* --COMMENTS SECTION */
