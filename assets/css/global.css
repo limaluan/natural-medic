@@ -1,0 +1,145 @@
+:root {
+  --background-white: #fff;
+
+  --gray-300: #f1f1f1;
+  --black-400: #303a36;
+  
+  --green-200: #bde2d3;
+  --green-250: #93c4b0;
+  --green-275: #6eac93;
+  --green-300: #109c62;
+  --green-400: #008037;
+  --green-500: #14774f;
+  --green-600: #183f02;
+  --green-700: #2b4d3f;
+  --green-800: #3a8365;
+  --green-900: #303a36;
+}
+
+/* -- GENERAL RULES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--green-400);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  height: fit-content;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+button:hover {
+  filter: brightness(0.8);
+  transition: filter 200ms;
+}
+
+textarea {
+  resize: none;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+[class$="container"] {
+  width: 100%;
+}
+
+[class$="content"] {
+  max-width: 140rem;
+  margin: auto;
+}
+
+/* --HEADER */
+.header-container {
+  background-color: var(--gray-300);
+  height: 10vh;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.header-logo {
+  height: 10vh;
+}
+
+.header-content nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: var(--green-400);
+}
+
+.header-content nav a:hover {
+  color: #000;
+  transform: scale(1.1);
+  transition: transform 200ms;
+}
+
+/* -- USER PANEL */
+.user-panel {
+  text-align: center;
+}
+
+.user-panel a {
+  color: var(--green-300);
+}
+
+.user-panel a:hover {
+  color: #000;
+  transform: scale(1.1);
+  transition: transform 200ms;
+}
+
+/* -- FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  height: 20vh;
+  border-top: 1px solid var(--green-500);
+  font-size: 1.4rem;
+}
+
+footer img {
+  height: 18vh;
+}
+
+/* --OTHERS */
+/* Removes number arrows of input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -2,6 +2,8 @@
 let cep;
 const botao = document.getElementById("search-button");
 
+let CEPValido = false;
+
 botao.addEventListener("click", async function () {
   cep = String(document.getElementById("search-input").value);
   await pesquisarCEP(cep);
@@ -9,9 +11,12 @@ botao.addEventListener("click", async function () {
 
 const pesquisarCEP = async (cepe) => {
   numero = Math.floor(Math.random() * 101);
+  validarCEP(cepe);
   if (cepe.trim() === "") {
     document.getElementById("cep-result").innerHTML = "Digite um CEP válido";
-  } else {
+  } else if (!CEPValido){
+    document.getElementById("cep-result").innerHTML = `*Insira um CEP em um formato válido (00000-000)`;
+  } else{
     await fetch(`https://viacep.com.br/ws/${cepe}/json/`, {
       method: "GET",
       headers: {
@@ -25,15 +30,27 @@ const pesquisarCEP = async (cepe) => {
         return response.json();
       })
       .then((data) => {
-        if (data.length === 0) {
+        if (data.erro === true){
+          document.getElementById("cep-result").innerHTML = `*CEP inexistente`;
+        }else if (data.length === 0) {
           document.getElementById(
             "cep-result"
           ).innerHTML = `<h5>CEP não encontrado</h5>`;
         } else {
           document.getElementById(
             "cep-result"
-          ).innerHTML = `<p>A clínica mais próxima de você fica em ${data.logradouro}, nº ${numero}, Bairro: ${data.bairro}, Cidade: ${data.localidade}, UF: ${data.uf}</p>`;
+          ).innerHTML = `<p>A clínica mais próxima de você fica no seguinte endereço: <br/> ${data.logradouro}, nº ${numero}, Bairro: ${data.bairro}, Cidade: ${data.localidade}, UF: ${data.uf}</p>`;
         }
       });
+  }
+};
+const validarCEP = (cepe) => {
+const regexCEP = /^[0-9]{5}-[0-9]{3}$/;
+
+  if (!regexCEP.test(cepe)) {
+    document.getElementById("cep-result").innerHTML = `*Insira um CEP em um formato válido (00000-000)`;
+    CEPValido = false;
+  } else {
+    CEPValido = true;
   }
 };

@@ -1,0 +1,250 @@
+[class$="title"] {
+  font-size: 5rem;
+}
+
+[class$="subtitle"] {
+  font-size: 2.4rem;
+}
+/* --INTRO SECTION */
+.intro-container {
+  height: 90vh;
+  position: relative;
+}
+
+.intro-content {
+  height: 90vh;
+}
+
+.doctor-background {
+  height: 90vh;
+  position: absolute;
+  z-index: -1;
+  right: 3rem;
+}
+
+.intro-summary {
+  width: 40%;
+}
+
+.intro-logo {
+  max-width: 40rem;
+  padding-top: 10rem;
+}
+
+.intro-summary {
+  color: #fff;
+  font-size: 3rem;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.intro-summary::before {
+  content: "";
+  background-color: var(--green-500);
+  position: absolute;
+  top: -3.2rem;
+  left: -54rem;
+  width: 200%;
+  height: 150%;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+/* --SERVICES SECTION */
+.services-container {
+  height: 70vh;
+  display: flex;
+  background: -webkit-linear-gradient(left, #338092, #1bcc97);
+  background: -moz-linear-gradient(left, #338092, #1bcc97);
+  background: -ms-linear-gradient(left, #338092, #1bcc97);
+  background: -o-linear-gradient(left, #338092, #1bcc97);
+  background: linear-gradient(to right, #338092, #1bcc97);
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.services-title {
+  color: var(--black-400);
+}
+
+.services-title span {
+  color: #fff;
+}
+
+.services-subtitle {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.services-items {
+  display: flex;
+  font-size: 1.8rem;
+  gap: 6rem;
+}
+
+.services-items a {
+  width: 20rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.services-items a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 200ms;
+}
+
+.services-items p {
+  color: #fff;
+}
+
+.services-items img {
+  height: 8rem;
+  /* filter: invert(100%) sepia(6%) saturate(2%) hue-rotate(207deg)
+    brightness(109%) contrast(100%); */
+}
+
+/* --STRUCTURE SECTION */
+.structure-container {
+  height: 100vh;
+}
+
+.structure-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.structure-content article {
+  width: 45%;
+}
+
+.article-title {
+  font-size: 3.6rem;
+  color: var(--black-400);
+}
+
+.article-title span {
+  color: var(--green-300);
+}
+
+.article-subtitle {
+  font-size: 1.8rem;
+}
+
+.structure-content img {
+  width: 50%;
+  border-radius: 10rem 0 0 10rem;
+  position: absolute;
+  right: 0;
+}
+
+/* --CLINIC SECTION */
+.clinic-container {
+  /* height: 50vh; */
+  padding: 10rem;
+  background: -webkit-linear-gradient(left, #338092, #1bcc97);
+  background: -moz-linear-gradient(left, #338092, #1bcc97);
+  background: -ms-linear-gradient(left, #338092, #1bcc97);
+  background: -o-linear-gradient(left, #338092, #1bcc97);
+  background: linear-gradient(to right, #338092, #1bcc97);
+}
+
+.clinic-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  gap: 3rem;
+}
+
+.clinic-title img {
+  height: 5rem;
+  filter: invert(100%) sepia(6%) saturate(2%) hue-rotate(207deg)
+    brightness(109%) contrast(100%);
+    padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.clinic-content input {
+  padding: 2rem;
+  width: 40rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-300);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --COMMENTS SECTION */
+.comments-section-container {
+  background-color: var(--gray-300);
+  padding: 4rem;
+}
+
+.comments-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comments-section-content form {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  gap: 1rem;
+}
+
+.comments-section-content button {
+  width: fit-content;
+  margin: auto;
+}
+
+.comments-section-content textarea {
+  height: 10rem;
+}
+
+.comments-section-content input,
+.comments-section-content textarea {
+  padding: 1rem;
+}
+
+.comments-list {
+  width: 60rem;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+
+.comments-list li {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comments-list h3 {
+  color: var(--black-400);
+  font-size: 1.6rem;
+}
+
+.comments-list p {
+  font-size: 1.6rem;
+}
